@@ -1,0 +1,25 @@
+<!-- SCRIPT A SER INCLUIDO EM WIDGET "HTML" NO LEADPAGES PARA APRESENTAR NOME DO E-PRODUTO APOS A TRANSACAO DO PAGSEGURO -->
+<script>
+function getContent() {
+        var query = window.location.search.substring(1);
+        var url = 'https://meuestilodecor.com.br/dummy/?';
+        var params = new URL(url + query);
+        var product = params.searchParams.get("t_product");
+        var result = params.searchParams.get("result");
+        var content = "<center>";
+
+        content = content + "<p style='color: #ffce54; font-size: 48px;'>" + product + "</p>";
+
+        if ( result == "OK" ) {
+                content = content + "<p style='color: white; font-size: 22px;'>Em breve voc&ecirc; receber&aacute; um e-mail com os pr&oacute;ximos passos.</p>";
+        } else {
+                content = content + "<p style='color: #ff712b; font-size: 22px;'> Sua transa&ccedil;&atilde;o est&aacute; sendo processada ou aguardado o pagamento via boleto. Assim que for conclu&iacute;da voc&ecirc; receber&aacute; um e-mail com os pr&oacute;ximos passos.</p>";
+        }
+
+        content = content + "</center>";
+        document.write(content);
+}
+
+getContent();
+</script>
+

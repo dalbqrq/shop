@@ -1,0 +1,30 @@
+<!-- SCRIPT A SER INCLUIDO EM WIDGET "HTML" NO LEADPAGES PARA APRESENTAR NOME DO E-PRODUTO APOS A TRANSACAO DO PAGSEGURO -->
+<script>
+function getContent() {
+        var query = window.location.search.substring(1);
+        var url = 'https://meuestilodecor.com.br/dummy/?';
+        var params = new URL(url + query);
+        var ref = params.searchParams.get("ref");
+        var product = params.searchParams.get("t_product");
+        var result = params.searchParams.get("result");
+        var transaction_id = params.searchParams.get("transaction_id");
+        var content = "<center>";
+
+	var link = "https://meuestilodecor.com.br/shop/download.php?ref=" + ref + "&result=" + result + "&t_product=" + product + "&transaction_id=" + transaction_id;
+
+        content = content + "<p style='color: #ffce54; font-size: 48px;'>" + product + "</p>";
+
+        if ( result == "OK" ) {
+                content = content + "<a href='" + link + "'><p style='color: white; font-size: 22px;'>Clique aqui para fazer o DOWNLOAD.</p></a>";
+                content = content + "<br><p style='color: white; font-size: 17;'>( Você receberá um e-mail com o link acima )</p></a>";
+        } else {
+                content = content + "<p style='color: #ff712b; font-size: 22px;'> Sua transa&ccedil;&atilde;o est&aacute; sendo processada ou aguardado o pagamento via boleto. Assim que for conclu&iacute;da voc&ecirc; receber&aacute; um e-mail com instru&ccedil;&otilde;es para fazer o download.</p>";
+        }
+
+        content = content + "</center>";
+        document.write(content);
+}
+
+getContent();
+</script>
+

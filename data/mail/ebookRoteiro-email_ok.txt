@@ -1,0 +1,12 @@
+Olá [name],
+
+obrigada por aquirir o [t_product].
+
+Entre no link abaixo para fazer o download agora mesmo!
+
+[download]
+
+Se você tiver qualquer dúvida, entre em contato comigo pelo email: simonecollet@meuestilodecor.com.br.
+
+Simone Collet
+

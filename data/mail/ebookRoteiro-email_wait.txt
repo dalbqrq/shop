@@ -1,0 +1,10 @@
+Olá [name],
+
+obrigada por aquirir o [t_product].
+
+Sua transação está sendo processada pelo PagSeguro. Assim que for concluída você receberá um email com a confirmação.
+
+Se você tiver qualquer dúvida, entre em contato comigo pelo email: simonecollet@meuestilodecor.com.br.
+
+Simone Collet
+

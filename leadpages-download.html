@@ -1,0 +1,26 @@
+<!-- SCRIPT A SER INCLUIDO EM WIDGET "HTML" NO LEADPAGES PARA APRESENTAR NOME DO E-PRODUTO APOS A TRANSACAO DO PAGSEGURO -->
+<script>
+function getDownload() {
+        var query = window.location.search.substring(1);
+        var url = 'https://meuestilodecor.com.br/dummy/?';
+        var params = new URL(url + query);
+        var ref = params.searchParams.get("ref");
+        var product = params.searchParams.get("t_product");
+        var result = params.searchParams.get("result");
+        var transaction_id = params.searchParams.get("transaction_id");
+        var content = "<center>";
+
+        var link = "https://meuestilodecor.com.br/shop/download.php?ref=" + ref + "&result=" + result + "&t_product=" + product + "&transaction_id=" + transaction_id;
+
+        var img = "https://meuestilodecor.com.br/wp-content/uploads/2018/01/button_download.png";
+
+        if ( result == "OK" ) {
+                content = content + "<a href='" + link + "'> <img border='0' alt='W3Schools' src='" + img + "'> </a>";
+        }
+
+        content = content + "</center>";
+        document.write(content);
+}
+
+getDownload();
+</script>

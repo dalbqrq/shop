@@ -1,0 +1,8 @@
+Olá [name],
+
+obrigada por aquirir o [t_product].
+
+Em breve você receberá um email com os próximos passos.
+
+Simone Collet
+

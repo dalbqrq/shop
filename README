@@ -1,0 +1,22 @@
+- O codigo de compras foi baseado neste exemplo:
+
+https://github.com/lubuzzo/checkout-transparente-PagSeguro
+
+
+- Exemplo de URL para consulta:
+
+https://ws.pagseguro.uol.com.br/v3/transactions/7DA6395F3BFC3BFC5835548BEFB8B52A950D?email=dalbqrq@gmail.com&token=D2E62C1F8F0242B0A5D002E816116538
+
+
+- Para configurar entre Producao e Sandbox alterar os arquivos:
+
+/env.pgp
+/MedLibrary/MedLibrary.php
+/PagSeguroLibrary/config/PagSeguroConfig.php
+
+
+- Para alterar o diretório (shop) alterar os arquivos:
+
+/env.php
+/leadpages-*   - Alterar os widgets html das páginas de retorno no Leadpages
+/templates/javascripast.php

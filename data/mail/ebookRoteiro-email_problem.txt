@@ -1,0 +1,9 @@
+Desculpe-nos!
+
+Ocorreu um problema na compra do seu [t_product].
+
+Tente realizar a compra novamente entrando no link abaixo. Mas não se preocupe. Você não será cobrada duas vezes. Se isso ocorrer nós devolveremos o seu dinheiro.
+
+[buy]?ref=[$ref]
+
+Simone Collet
